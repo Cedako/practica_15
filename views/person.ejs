@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link href="/assets/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Person: <%= ID %></h1>
+    <h2>Mensaje: <%= Message %></h2>
+    <h2>Veces: <%= Times %></h2> 
+    <% if ((Message == "Hola") || (Message == "Adios") || (Message == "Bienvenido")){ %>
+        <% for (let i=0; i < (Times); i++){ %>
+            <h3> <%= Message %> <%= ID %> </h3>
+            <% }} %>
+</body>
+</html>
+<% /* %> DOCUMENTACION PERSONAL
+ LAS LLAVES USADAS PARA EL FOR Y EL IF CORREN CODIGO NORMAL PERO CIERRAN DONDE EMPIEZA
+ EL "{" Y VUELVEN A ABRIRSE PARA CERRAR LA OTRA LLAVE "}".
+ LO QUE QUEDE DENTRO DE LAS MISMAS SEGUIRA LAS INSTRUCCIONES DE LA FUNCION.
+ EN RESUMEN: SE UTILIZARAN LAS LLAVES "<% %>" TANTO EN EL INICIO COMO
+ EN EL FINAL DE LAS FUNCIONES. 
+ <% */ %>
